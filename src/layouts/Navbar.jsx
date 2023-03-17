@@ -15,22 +15,22 @@ const Navbar = ({ toggleMenu, isMenuOpen }) => {
         id="navbar-menu"
       >
         <li>
-          <a href="#about" class="transition duration-300 ease-in-out block hover:text-almost-black dark:hover:text-gray-400">
+          <a href="#about" className="font-medium cursor-pointer text-[16px] transition duration-300 ease-in-out block hover:text-almost-black dark:hover:text-gray-400">
             About
           </a>
         </li>
         <li>
-          <a href="#skills" class="transition duration-300 ease-in-out block hover:text-almost-black dark:hover:text-gray-400">
+          <a href="#skills" className="font-medium cursor-pointer text-[16px] transition duration-300 ease-in-out block hover:text-almost-black dark:hover:text-gray-400">
             Skills
           </a>
         </li>
         <li>
-          <a href="#projects" class="transition duration-300 ease-in-out block hover:text-almost-black dark:hover:text-gray-400">
+          <a href="#projects" className="font-medium cursor-pointer text-[16px] transition duration-300 ease-in-out block hover:text-almost-black dark:hover:text-gray-400">
             Projects
           </a>
         </li>
         <li className="py-4 md:mr-[0.1875rem] md:py-0 lg:ml-auto">
-          <a href="#contact" class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300">
+          <a href="#contact" className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300">
             Hire Me
           </a>
         </li>

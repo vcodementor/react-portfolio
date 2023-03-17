@@ -12,7 +12,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div className="p-4 md:w-1/2 w-full" key={testimonial.id}>
               <div className="h-full bg-opacity-10 p-8 shadow-lg hover:shadow-xl cursor-point bg-secondary-light dark:bg-ternary-dark">
-                <p className="leading-relaxed mb-6 text-ternary-dark dark:text-ternary-light">{testimonial.quote}</p>
+                <p className="leading-relaxed mb-6 text-ternary-dark dark:text-ternary-light">{testimonial.testimonial}</p>
                 <div className="inline-flex items-center">
                   <img
                     alt="testimonial"

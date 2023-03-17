@@ -16,7 +16,7 @@ export default function Projects() {
           </p>
         </div>
         
-        <div className="flex flex-wrap -m-4">
+        {/* <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
               href={project.link}
@@ -25,17 +25,17 @@ export default function Projects() {
               <div className="flex relative">
                 <div className="px-8 py-10 relative z-10 w-full rounded-xl shadow-lg hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark text-ternary-dark dark:text-ternary-light">
                   <h2 className="text-lg title-font font-large mb-1">
-                    {project.title}
+                    {project.name}
                   </h2>
                   <h1 className="title-font text-sm font-medium mb-3">
-                    {project.subtitle}
+                    {project.tags}
                   </h1>
                   <p className="leading-relaxe">{project.description}</p>
                 </div>
               </div>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

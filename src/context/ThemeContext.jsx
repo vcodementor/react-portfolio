@@ -7,7 +7,7 @@ const defaultValue = {
   
 const ThemeContext = createContext(defaultValue)
   
-const ThemeContextWrapper = ({ children }) => {
+const ThemeContextProvider = ({ children }) => {
   const persistedTheme = localStorage.getItem('theme')
   const [theme, setTheme] = useState(persistedTheme || 'light')
 
@@ -21,7 +21,14 @@ const ThemeContextWrapper = ({ children }) => {
     else document.body.classList.add('dark')
   }, [theme])
 
-  return <ThemeContext.Provider value={{ currentTheme: theme, changeCurrentTheme }}>{children}</ThemeContext.Provider>
+  return <ThemeContext.Provider value={
+    { 
+      currentTheme: theme,
+      changeCurrentTheme
+    }
+  }>
+    {children}
+  </ThemeContext.Provider>
 }
 
-export default ThemeContextWrapper
+export default ThemeContextProvider

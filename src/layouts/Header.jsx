@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`max-w-[87.75rem] mx-auto px-4 sm:px-4 lg:px-6 flex items-center justify-between py-[1.3125rem] top-0 z-10`}>
+    <header className={`max-w-[87.75rem] mx-auto px-4 sm:px-4 lg:px-6 flex items-center justify-between  top-0 z-10`}>
       <a href="#about" className="mr-[3.875rem] ml-3 title-font font-medium text-xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light">
         {/* <img
           src={logo}
