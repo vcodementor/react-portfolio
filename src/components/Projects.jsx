@@ -16,10 +16,10 @@ export default function Projects() {
           </p>
         </div>
         
-        {/* <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
-              href={project.link}
+              href={project.source_code_link}
               key={project.id}
               className="sm:w-1/2 w-100 p-4">
               <div className="flex relative">
@@ -27,15 +27,19 @@ export default function Projects() {
                   <h2 className="text-lg title-font font-large mb-1">
                     {project.name}
                   </h2>
-                  <h1 className="title-font text-sm font-medium mb-3">
-                    {project.tags}
-                  </h1>
+                  <div className="flex flex-wrap justify-center">
+                  {project.tags.map((tag) => (
+                      <div className="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white dark:bg-dark rounded-full text-gray-700">
+                         <div className="text-xs font-normal leading-none max-w-full flex-initial">{tag.name}</div>
+                     </div>
+                  ))}
+                  </div>
                   <p className="leading-relaxe">{project.description}</p>
                 </div>
               </div>
             </a>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );

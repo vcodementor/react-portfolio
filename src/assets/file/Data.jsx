@@ -212,15 +212,11 @@ const projects = [
   {
     id: 1,
     name: "AI Image Generator",
-    description:"Transform dreams into reality with AI-generated images using the MERN stack, Tailwind, OpenAI's DALL-E, and Cloudinary. This project provides a stunning user experience like no other, taking you on a magical journey into a world of wonders!",
+    description:"Transform dreams into reality with AI-generated images using the MERN stack, Tailwind. This project provides a stunning user experience like no other, taking you on a magical journey into a world of wonders!",
       tags: [
           {
               name: "React",
               color: "blue-text-gradient",
-          },
-          {
-              name: "OpenAI DALL-E",
-              color: "green-text-gradient",
           },
           {
               name: "Tailwind",
@@ -278,6 +274,29 @@ const projects = [
           },
       ],
       image: Images.project4,
+      source_code_link: "https://github.com/vcodementor",
+  },
+  {
+    id: 4,
+    name: "One thread",
+    description:"Transform dreams into reality with AI-generated images using the MERN stack, Tailwind. This project provides a stunning user experience like no other, taking you on a magical journey into a world of wonders!",
+      tags: [
+          {
+              name: "React",
+              color: "blue-text-gradient",
+          },
+          {
+              name: "Tailwind",
+              color: "pink-text-gradient",
+          },
+          {
+              name: "MERN",
+              color: "orange-text-gradient",
+          },
+
+
+      ],
+      image: Images.project2,
       source_code_link: "https://github.com/vcodementor",
   },
 ];
