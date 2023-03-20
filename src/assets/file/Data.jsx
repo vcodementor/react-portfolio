@@ -205,15 +205,7 @@ const testimonials = [
         designation: "digital Marketing",
         company: "Appinitial technologies",
         image: "https://randomuser.me/api/portraits/women/11.jpg",
-    },
-    {
-        id:5,
-        testimonial: "I had the pleasure of working with Vivek on a complex web development project, and I was impressed with their ability to handle multiple tasks while maintaining the highest level of quality.",
-        name: "Mit Patel",
-        designation: "Software Engineer",
-        company: "Siemens",
-        image: "https://randomuser.me/api/portraits/men/91.jpg",
-    },
+    }
 ];
 
 const projects = [
