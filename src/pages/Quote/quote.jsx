@@ -4,7 +4,7 @@ function getRandomQuote(quotes) {
   return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-const Quote = () => {
+export const Quote = () => {
   const [quotes, setQuotes] = useState([]);
   const [quote, setQuote] = useState(null);
 
@@ -40,5 +40,3 @@ const Quote = () => {
     </section> 
   );
 }
-
-export default Quote;
