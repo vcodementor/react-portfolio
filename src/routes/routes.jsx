@@ -5,7 +5,7 @@ import Blogs from "../pages/blog/list";
 import Blog from "../pages/blog/view";
 import Home from "../pages/home/view";
 import {Quote} from "../pages/Quote/quote";
-import {GithubUserSerach} from "../pages/github/usersearch"
+import {GithubUserSerach} from "../pages/Github/usersearch"
 
 export default function Router() {
   
