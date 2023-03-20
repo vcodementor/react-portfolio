@@ -25,10 +25,10 @@ export const Quote = () => {
       <section id="projects" className="body-font h-screen">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-ternary-dark dark:text-ternary-light">
-            Quote Generator
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-ternary-dark dark:text-ternary-light">
+            Quote
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-ternary-dark dark:text-ternary-light">
+          <p className="lg:w-2/3 mx-auto leading-relaxed sm:text-4xl text-3xl text-ternary-dark dark:text-ternary-light">
             <span>"</span>
             {quote?.text}
             <span>"</span>
