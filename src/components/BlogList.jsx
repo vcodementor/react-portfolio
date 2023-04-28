@@ -9,7 +9,7 @@ export default function BlogList() {
     // const [filter, setFilter] = useState("");
     const [paginate, setpaginate] = useState(4);
 
-    useEffect(() => { // https://raw.githubusercontent.com/iamspruce/search-filter-painate-reactjs/main/data/countries.json
+    useEffect(() => { 
         fetch('https://jsonplaceholder.typicode.com/posts')
         .then((res) => res.json())
         .then((result) =>{

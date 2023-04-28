@@ -211,8 +211,8 @@ const testimonials = [
 const projects = [
   {
     id: 1,
-    name: "AI Image Generator",
-    description:"Transform dreams into reality with AI-generated images using the MERN stack, Tailwind. This project provides a stunning user experience like no other, taking you on a magical journey into a world of wonders!",
+    name: "Climate risk Analytics Dashboard",
+    description:"Climate risk Analytics Dashboard with leaflet map , react-table, d3 chart",
       tags: [
           {
               name: "React",
@@ -223,14 +223,18 @@ const projects = [
               color: "pink-text-gradient",
           },
           {
-              name: "MERN",
+              name: "Next Js",
               color: "orange-text-gradient",
           },
+          {
+            name: "d3",
+            color: "blue-text-gradient",
+        },
 
 
       ],
       image: Images.project2,
-      source_code_link: "https://github.com/vcodementor",
+      source_code_link: "https://github.com/vcodementor/climate-risk-analytics-dashboard",
   },
   {
     id: 2,
