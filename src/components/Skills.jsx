@@ -4,7 +4,7 @@ import { services,technologies } from "../assets/file/Data";
 
 const ServiceCard = ({index, title, icon}) => (
  
-<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-500 shadow-cyan-400">
   {/* <img className="max-w-full rounded-t-lg" src={icon} alt="skill" /> */}
     <div className="p-5">
       <h5 className="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
@@ -28,7 +28,7 @@ export default function Skills() {
             and developing applications, functionalities, and graphical user interfaces.
           </p>
         </div>
-        <div className='grid gap-6 auto-rows-fr grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3'>
+        <div className='grid gap-6 auto-rows-fr grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 '>
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
@@ -36,12 +36,12 @@ export default function Skills() {
         
         <div className='flex flex-row flex-wrap justify-center gap-10 p-8'>
           {technologies.map((technology) => (
-            <div className='p-[1px] rounded-[20px] shadow-card' key={technology.name}>
+            <div className='p-[1px] rounded-lg shadow-card' key={technology.name}>
               {/* <BallCanvas icon={technology.icon} /> */}
               <img
                   src={technology.icon}
-                  alt='web-development'
-                  className='object-cover h-20'
+                  alt={technology.name}
+                  className='h-20 rounded-lg'
               />
             </div>
           ))}
