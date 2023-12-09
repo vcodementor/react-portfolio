@@ -211,7 +211,7 @@ const testimonials = [
 const projects = [
   {
     id: 1,
-    name: "Climate risk Analytics Dashboard",
+    name: "Climate risk Analytics Dashboard and  Data Management Sorting",
     description:"Climate risk Analytics Dashboard with leaflet map , react-table, d3 chart",
       tags: [
           {
@@ -234,43 +234,35 @@ const projects = [
 
       ],
       image: Images.project2,
-      source_code_link: "https://github.com/vcodementor/climate-risk-analytics-dashboard",
+      source_code_link: "https://climate-risk-analytics-dashboard.vercel.app/",
   },
   {
     id: 2,
-      name: "YouTube Clone",
+      name: "Air call mobile app ui",
       description:
-          "Built a revolutionary YouTube clone using React.js and Material UI 5. This cutting-edge platform offers seamless video streaming and effortless RapidAPI integration, delivering the ultimate viewing experience.",
+          "Build call log ui and functionality UI",
       tags: [
           {
               name: "React",
               color: "blue-text-gradient",
           },
           {
-              name: "RapidAPI",
+              name: "Tailwind CSS",
               color: "green-text-gradient",
-          },
-          {
-              name: "Material UI 5",
-              color: "pink-text-gradient",
           },
       ],
       image: Images.project3,
-      source_code_link: "https://github.com/vcodementor",
+      source_code_link: "https://react-air-call.netlify.app/",
   },
   {
     id: 3,
-      name: "Data Management Sorting Algorithms",
+      name: "React Book CRUD",
       description:
-      "Developed a high-performance Java multi-sorting algorithm that utilizes bubble, quick, insertion, selection, merge, and odd-even sorting algorithms. This solution offers lightning-fast sorting capabilities, enabling optimal efficiency.",
+      "React hook and book opensource api using crud operation",
       tags: [
           {
-              name: "Java",
+              name: "Rect",
               color: "blue-text-gradient",
-          },
-          {
-              name: "Algorithms",
-              color: "green-text-gradient",
           },
           {
               name: "Data management",
@@ -278,7 +270,7 @@ const projects = [
           },
       ],
       image: Images.project4,
-      source_code_link: "https://github.com/vcodementor",
+      source_code_link: "https://react-bookstore-demo.vercel.app/",
   },
   {
     id: 4,
