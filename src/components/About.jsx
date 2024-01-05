@@ -1,6 +1,6 @@
 import { React } from "react";
 import {Images} from '../utlis/image';
-// import {EarthCanvas} from '../components/canvas/earth';
+import {EarthCanvas} from '../components/canvas/earth';
 
 export default function About() {
   return (
@@ -31,14 +31,15 @@ export default function About() {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        {/* <EarthCanvas/> */}
+        <div className="object-cover object-center rounded">
+          <EarthCanvas/>
+        </div>
           <img
             className="object-cover object-center rounded"
             alt="hero"
             src={Images.about}
           />
-          <div className="object-cover object-center rounded">
-          </div>
+        
         </div>
       </div>
     </section>
