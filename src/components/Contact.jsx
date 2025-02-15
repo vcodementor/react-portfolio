@@ -43,8 +43,8 @@ export default function Contact() {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                1570 Lawrence Avenue <br />
-                North York,Ontario, M6L 1C2
+                1 Betterton Cres <br />
+                Brampton,Ontario, L7A 0S4
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">

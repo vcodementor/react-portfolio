@@ -208,93 +208,103 @@ const testimonials = [
     }
 ];
 
-const projects = [
-  {
-    id: 1,
-    name: "Climate risk Analytics Dashboard and  Data Management Sorting",
-    description:"Climate risk Analytics Dashboard with leaflet map , react-table, d3 chart",
-      tags: [
-          {
-              name: "React",
-              color: "blue-text-gradient",
-          },
-          {
-              name: "Tailwind",
-              color: "pink-text-gradient",
-          },
-          {
-              name: "Next Js",
-              color: "orange-text-gradient",
-          },
-          {
-            name: "d3",
-            color: "blue-text-gradient",
-        },
-
-
-      ],
-      image: Images.project2,
-      source_code_link: "https://climate-risk-analytics-dashboard.vercel.app/",
-  },
-  {
-    id: 2,
-      name: "Air call mobile app ui",
-      description:
-          "Build call log ui and functionality UI",
-      tags: [
-          {
-              name: "React",
-              color: "blue-text-gradient",
-          },
-          {
-              name: "Tailwind CSS",
-              color: "green-text-gradient",
-          },
-      ],
-      image: Images.project3,
-      source_code_link: "https://react-air-call.netlify.app/",
-  },
-  {
-    id: 3,
-      name: "React Book CRUD",
-      description:
-      "React hook and book opensource api using crud operation",
-      tags: [
-          {
-              name: "Rect",
-              color: "blue-text-gradient",
-          },
-          {
-              name: "Data management",
-              color: "pink-text-gradient",
-          },
-      ],
-      image: Images.project4,
-      source_code_link: "https://react-bookstore-demo.vercel.app/",
-  },
-  {
-    id: 4,
-    name: "One thread",
-    description:"Transform dreams into reality with AI-generated images using the MERN stack, Tailwind. This project provides a stunning user experience like no other, taking you on a magical journey into a world of wonders!",
-      tags: [
-          {
-              name: "React",
-              color: "blue-text-gradient",
-          },
-          {
-              name: "Tailwind",
-              color: "pink-text-gradient",
-          },
-          {
-              name: "MERN",
-              color: "orange-text-gradient",
-          },
-
-
-      ],
-      image: Images.project2,
-      source_code_link: "https://github.com/vcodementor",
-  },
-];
+const projects =  [
+                  {
+                    "id": 1,
+                    "name": "WordPress Travel & eCommerce Platform",
+                    "description": "A custom WordPress travel and eCommerce solution with WooCommerce and advanced booking capabilities.",
+                    "tags": [
+                      { "name": "WordPress", "color": "blue-text-gradient" },
+                      { "name": "WooCommerce", "color": "green-text-gradient" },
+                      { "name": "Elementor", "color": "pink-text-gradient" }
+                    ],
+                    "image": "Images.wordpress1",
+                    "source_code_link": "https://citysightseeingtoronto.com/"
+                  },
+                  {
+                    "id": 2,
+                    "name": "WordPress AI Product Platform",
+                    "description": "A WordPress-based Ai Service Base website with a custom theme and plugins.",
+                    "tags": [
+                      { "name": "WordPress", "color": "blue-text-gradient" },
+                      { "name": "AI Service Base", "color": "orange-text-gradient" },
+                      { "name": "Custom Plugins", "color": "green-text-gradient" }
+                    ],
+                    "image": "Images.wordpress2",
+                    "source_code_link": "https://vosyn.ai/"
+                  },
+                  {
+                    "id": 3,
+                    "name": "WordPress Education & LMS Platform",
+                    "description": "An online learning management system (LMS) using WordPress, LearnDash, and custom integrations.",
+                    "tags": [
+                      { "name": "WordPress", "color": "blue-text-gradient" },
+                      { "name": "LMS", "color": "green-text-gradient" },
+                      { "name": "LearnDash", "color": "pink-text-gradient" }
+                    ],
+                    "image": "Images.wordpress3",
+                    "source_code_link": "https://www.embark.ca/"
+                  },
+                  {
+                    "id": 4,
+                    "name": "Shopify Beauty & Cosmetics Store",
+                    "description": "A Shopify-based eCommerce store for beauty and cosmetics, featuring custom themes and apps.",
+                    "tags": [
+                      { "name": "Shopify", "color": "purple-text-gradient" },
+                      { "name": "Liquid", "color": "blue-text-gradient" },
+                      { "name": "eCommerce", "color": "orange-text-gradient" }
+                    ],
+                    "image": "Images.shopify",
+                    "source_code_link": "https://www.momilash.ca/"
+                  },
+                  {
+                    "id": 5,
+                    "name": "PHP & Vue Travel & Healthcare Platform",
+                    "description": "A travel and healthcare management system built with PHP and Vue.js, featuring real-time booking and patient management.",
+                    "tags": [
+                      { "name": "PHP", "color": "blue-text-gradient" },
+                      { "name": "Vue.js", "color": "green-text-gradient" },
+                      { "name": "MySQL", "color": "orange-text-gradient" }
+                    ],
+                    "image": "Images.php_vue",
+                    "source_code_link": "https://shakaguide.com"
+                  },
+                  {
+                    "id": 6,
+                    "name": "Node.js & Angular Finance & Retail Dashboard",
+                    "description": "A real-time finance and retail analytics dashboard built with Node.js, Angular, and MongoDB.",
+                    "tags": [
+                      { "name": "Node.js", "color": "blue-text-gradient" },
+                      { "name": "Angular", "color": "red-text-gradient" },
+                      { "name": "MongoDB", "color": "green-text-gradient" }
+                    ],
+                    "image": "Images.node_angular",
+                    "source_code_link": ""
+                  },
+                  {
+                    "id": 7,
+                    "name": "Python Django Finance & Healthcare App",
+                    "description": "A web application for finance and healthcare data processing using Python, Django, and React.",
+                    "tags": [
+                      { "name": "Python", "color": "blue-text-gradient" },
+                      { "name": "Django", "color": "green-text-gradient" },
+                      { "name": "React", "color": "orange-text-gradient" }
+                    ],
+                    "image": "Images.python_django",
+                    "source_code_link": ""
+                  },
+                  {
+                    "id": 8,
+                    "name": "Python Flask E-commerce & Retail App",
+                    "description": "A lightweight and scalable eCommerce and retail management system built using Python Flask and PostgreSQL.",
+                    "tags": [
+                      { "name": "Python", "color": "blue-text-gradient" },
+                      { "name": "Flask", "color": "green-text-gradient" },
+                      { "name": "PostgreSQL", "color": "orange-text-gradient" }
+                    ],
+                    "image": "Images.python_flask",
+                    "source_code_link": ""
+                  }
+        ];
 
 export {services,technologies, experiences,testimonials, projects};
