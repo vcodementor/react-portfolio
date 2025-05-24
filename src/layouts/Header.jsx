@@ -16,7 +16,7 @@ export default function Header() {
         <img
           src={Images.logo}
           alt="snap"
-          className={`dark:filter-logo-white mt-[0.3125rem] w-36 h-30 rounded-full object-cover border-4 border-gray-800"`}
+          className={`dark:filter-logo-white mt-[0.3125rem] w-32 h-26 rounded-full object-cover border-4 border-gray-800"`}
         />
       </a>
       <Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />

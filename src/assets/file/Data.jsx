@@ -26,11 +26,11 @@ const services = [
         icon: Images.mobileapp,
     },
     {
-        title: "Digital Marketing",
+        title: "Social Media Marketing / SEO",
         icon: Images.digitalmarketing,
     },
     {
-        title: "UI/UX Design",
+        title: "Web Design",
         icon: Images.uiuxdesign,
     },
      {
