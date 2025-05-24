@@ -6,6 +6,14 @@ const services = [
         icon: Images.fullstack,
     },
     {
+        title: "Software Developer",
+        icon: Images.frontend,
+    },
+    {
+        title: "AI/ML Developer",
+        icon: Images.frontend,
+    },
+    {
         title: "Frontend Developer",
         icon: Images.frontend,
     },
@@ -24,6 +32,10 @@ const services = [
     {
         title: "UI/UX Design",
         icon: Images.uiuxdesign,
+    },
+     {
+        title: "Penetration Testing / Cyber Security",
+        icon: Images.digitalmarketing,
     },
 ];
 
@@ -185,25 +197,25 @@ const testimonials = [
     {
         id:2,
         testimonial: "I had the pleasure of working with Vivek on a complex web development project, and I was impressed with their ability to handle multiple tasks while maintaining the highest level of quality.",
-        name: "Mit Patel",
-        designation: "Frontend Developer",
-        company: "Siemens",
+        name: "Chris",
+        designation: "Project Manager",
+        company: "Full Stack Resources",
         image: "https://randomuser.me/api/portraits/men/11.jpg",
     },
     {
         id:3,
         testimonial: "I had the pleasure of working with Vivek on a complex web development project, and I was impressed with their ability to handle multiple tasks while maintaining the highest level of quality.",
-        name: "Jay Patel",
-        designation: "Software Engineer",
-        company: "ShowIT Technologies Inc",
+        name: "Mike Yoo",
+        designation: "Project Manager",
+        company: "RBC",
         image: "https://randomuser.me/api/portraits/men/90.jpg",
     },
     {
         id:4,
         testimonial:"Vivek is an exceptional developer and a joy to work with. His passion for programming and problem-solving is unmatched.",
-        name: "Vidhi Patel",
-        designation: "digital Marketing",
-        company: "Appinitial technologies",
+        name: "Seema",
+        designation: "Project Manager",
+        company: "Auroramarine",
         image: "https://randomuser.me/api/portraits/women/11.jpg",
     }
 ];
@@ -305,6 +317,6 @@ const projects =  [
                     "image": "Images.python_flask",
                     "source_code_link": ""
                   }
-        ];
+];
 
 export {services,technologies, experiences,testimonials, projects};

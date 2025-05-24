@@ -1,3 +1,4 @@
+import logo from '../assets/images/logo.webp';
 import about from '../assets/images/coding.svg';
 import profile from '../assets/images/profile.png';
 import project1 from '../assets/images/projects/project1.svg';
@@ -37,6 +38,7 @@ import docker  from '../assets/images/technologies/docker.png';
 import figma  from '../assets/images/technologies/figma.png';
 
 const Images = {
+    logo,
     about,
     profile,
     fullstack,

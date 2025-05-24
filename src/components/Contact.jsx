@@ -28,15 +28,13 @@ export default function Contact() {
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
+          <iframe  width="100%"
             height="100%"
             title="map"
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.189963871437!2d-79.49093522427654!3d43.70660114897606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b316a0bc75b55%3A0x6301f040756b851f!2s1570%20Lawrence%20Ave%20W%2C%20North%20York%2C%20ON%20M6L%201C2!5e0!3m2!1sen!2sca!4v1685810062577!5m2!1sen!2sca"
-          />
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5771.186669368702!2d-79.8274455!3d43.6774268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1481a56a61ad%3A0x5e6035c639905527!2s1%20Betterton%20Cres%2C%20Brampton%2C%20ON%20L7A%200S5!5e0!3m2!1sen!2sca!4v1740078773535!5m2!1sen!2sca"></iframe>
           <div className="bg-gray-100 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold tracking-widest text-xs">
