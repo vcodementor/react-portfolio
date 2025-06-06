@@ -1,4 +1,4 @@
-import { Menu, X, Sun, Moon, Code, Home, Briefcase, BookOpen, Mail} from 'lucide-react';
+import { Menu, X, Sun, Moon, Home, Briefcase, BookOpen, Mail} from 'lucide-react';
 
 const Navigation = ({ state, dispatch }) => {
   const navItems = [

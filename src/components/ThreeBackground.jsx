@@ -8,14 +8,21 @@ const ThreeBackground = ({ darkMode }) => {
   useEffect(() => {
     if (!mountRef.current) return;
 
+    const mountNode = mountRef.current; // 
+
     // Scene setup
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-    
+
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor(0x000000, 0);
-    mountRef.current.appendChild(renderer.domElement);
+    mountNode.appendChild(renderer.domElement); // ✅ use mountNode
 
     // Create floating particles
     const particlesGeometry = new THREE.BufferGeometry();
@@ -32,7 +39,7 @@ const ThreeBackground = ({ darkMode }) => {
       size: 0.005,
       color: darkMode ? 0x00ffff : 0x6366f1,
       transparent: true,
-      opacity: 0.8
+      opacity: 0.8,
     });
 
     const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
@@ -44,7 +51,7 @@ const ThreeBackground = ({ darkMode }) => {
       color: darkMode ? 0x00ffff : 0x8b5cf6,
       wireframe: true,
       transparent: true,
-      opacity: 0.3
+      opacity: 0.3,
     });
     const torus = new THREE.Mesh(torusGeometry, torusMaterial);
     scene.add(torus);
@@ -55,13 +62,13 @@ const ThreeBackground = ({ darkMode }) => {
     // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
-      
+
       if (sceneRef.current) {
         sceneRef.current.particlesMesh.rotation.x += 0.001;
         sceneRef.current.particlesMesh.rotation.y += 0.001;
         sceneRef.current.torus.rotation.x += 0.01;
         sceneRef.current.torus.rotation.y += 0.01;
-        
+
         sceneRef.current.renderer.render(sceneRef.current.scene, sceneRef.current.camera);
       }
     };
@@ -77,10 +84,11 @@ const ThreeBackground = ({ darkMode }) => {
     };
     window.addEventListener('resize', handleResize);
 
+    // ✅ CLEANUP
     return () => {
       window.removeEventListener('resize', handleResize);
-      if (mountRef.current && renderer.domElement) {
-        mountRef.current.removeChild(renderer.domElement);
+      if (mountNode && renderer.domElement) {
+        mountNode.removeChild(renderer.domElement); // ✅ use mountNode
       }
       renderer.dispose();
     };

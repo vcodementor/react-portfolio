@@ -12,7 +12,7 @@ const HomeSection = ({ darkMode }) => {
       setCurrentSkill((prev) => (prev + 1) % skills.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [skills.length]);
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 pt-16">
