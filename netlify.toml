@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/*"
+  from = "https://vcodementor-portfolio.netlify.app/*"
   to = "https://vcodementor.netlify.app/:splat"
   status = 301
   force = true
