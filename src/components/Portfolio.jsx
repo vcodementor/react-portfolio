@@ -12,7 +12,7 @@ const Portfolio = () => {
   const renderSection = () => {
     switch (state.activeSection) {
       case 'home':
-        return <HomeSection darkMode={state.darkMode} />;
+        return <HomeSection darkMode={state.darkMode} dispatch={dispatch} />;
       case 'projects':
         return <ProjectsSection darkMode={state.darkMode} />;
       case 'blogs':

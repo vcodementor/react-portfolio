@@ -5,50 +5,50 @@ const ProjectsSection = ({ darkMode }) => {
     {
       title: "E-commerce Platform",
       category: "Full-Stack",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+      tech: ["PHP", "React", "My Sql", "Stripe"],
       description: "Modern e-commerce solution with AI recommendations",
       image: "🛒",
-      link: "#"
+      link: "https://www.auroramarine.ca"
     },
     {
-      title: "Healthcare Management",
-      category: "Web App",
-      tech: ["Next.js", "Python", "PostgreSQL", "AWS"],
+      title: "Hotel booking",
+      category: "Full-Stack",
+      tech: ["PHP", "Wordpress", "MYSQL", "AWS"],
       description: "Patient management system with telemedicine features",
       image: "🏥",
-      link: "#"
+      link: "https://hotelamavi.com/"
     },
     {
       title: "Real Estate Platform",
       category: "Full-Stack",
-      tech: ["React", "PHP", "MySQL", "Google Maps"],
+      tech: ["React", "Nodejs", "MySQL", "Google Maps"],
       description: "Property listing platform with virtual tours",
       image: "🏠",
-      link: "#"
+      link: "https://www.charthome.ca/"
     },
     {
-      title: "Travel Booking App",
-      category: "Mobile + Web",
-      tech: ["React Native", "Node.js", "Redis", "Azure"],
+      title: "Tour guide",
+      category: "Full-Stack",
+      tech: ["Angular", "PHP", "Redis", "Aws"],
       description: "Complete travel booking solution with AI itinerary",
       image: "✈️",
-      link: "#"
+      link: "https://www.shakaguide.com/"
     },
     {
-      title: "Social Media Dashboard",
-      category: "SaaS",
-      tech: ["Vue.js", "Python", "Docker", "GCP"],
-      description: "Multi-platform social media management tool",
+      title: "tour Book",
+      category: "Full-Stack",
+      tech: ["Vue.js", "PHP", "Docker", "Azure"],
+      description: "Multi-platform tour booking management tool",
       image: "📱",
-      link: "#"
+      link: "https://citysightseeingtoronto.com/"
     },
     {
       title: "AI Content Generator",
       category: "AI/ML",
-      tech: ["Python", "TensorFlow", "FastAPI", "React"],
+      tech: ["Python", "TensorFlow", "Django", "React"],
       description: "Content generation platform using advanced AI",
       image: "🤖",
-      link: "#"
+      link: "https://vosyn.ai/"
     }
   ];
 
@@ -59,19 +59,20 @@ const ProjectsSection = ({ darkMode }) => {
           <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${
             darkMode ? 'text-white' : 'text-gray-900'
           }`}>
-            Featured <span className={`${
+            My <span className={`${
               darkMode ? 'text-cyan-400' : 'text-indigo-600'
-            }`}>Projects</span>
+            }`}>Works</span>
           </h2>
           <p className={`text-xl max-w-3xl mx-auto ${
             darkMode ? 'text-gray-400' : 'text-gray-600'
           }`}>
-            Innovative solutions across various industries, from e-commerce to healthcare
+            Innovative solutions across various industries
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
+            <a href={project.link} target="_blank" title={project.title}>
             <div
               key={index}
               className={`group relative rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 ${
@@ -116,11 +117,14 @@ const ProjectsSection = ({ darkMode }) => {
                   : 'text-indigo-600 hover:text-indigo-500'
               }`}>
                 <span>View Project</span>
-                <ExternalLink size={16} />
+                <ExternalLink size={16}  />
               </button>
             </div>
+            </a>
           ))}
+
         </div>
+    
       </div>
     </section>
   );

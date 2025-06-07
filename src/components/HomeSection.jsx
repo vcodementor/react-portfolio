@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 import SkillsSection from './SkillsSection';
 import ReviewsSection from './ReviewsSection';
 
-const HomeSection = ({ darkMode }) => {
+const HomeSection = ({ darkMode, dispatch }) => {
   const skills = ['Full Stack Development', 'Web Developer', 'Mobile  Application Developer' , 'E-commerce Solutions', 'SEO', 'AI & Machine Learning', 'Social Media Marekting',];
   const [currentSkill, setCurrentSkill] = useState(0);
 
@@ -51,8 +51,8 @@ const HomeSection = ({ darkMode }) => {
         <p className={`text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed ${
           darkMode ? 'text-gray-400' : 'text-gray-600'
         }`}>
-          Expert in React, Next.js, Python, PHP, AWS, Azure, and modern web technologies. 
-          Creating innovative solutions for social media, e-commerce, healthcare, real estate, and travel industries.
+          Crafting comprehensive digital solutions from concept to deployment. 
+          Expertise in modern web technologies, cloud architecture, search optimization, and conversion-focused marketing strategies.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -60,14 +60,18 @@ const HomeSection = ({ darkMode }) => {
             darkMode
               ? 'bg-gradient-to-r from-cyan-500 to-green-500 text-black hover:shadow-2xl hover:shadow-cyan-500/25'
               : 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:shadow-2xl hover:shadow-indigo-500/25'
-          }`}>
+          }`}
+           onClick={() => dispatch({ type: 'SET_ACTIVE_SECTION', payload: 'projects' })}
+          >
             View My Work
           </button>
           <button className={`px-8 py-4 rounded-lg font-semibold border-2 transition-all duration-300 ${
             darkMode
               ? 'border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black'
               : 'border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white'
-          }`}>
+          }`}
+           onClick={() => dispatch({ type: 'SET_ACTIVE_SECTION', payload: 'contact' })}
+          >
             Get In Touch
           </button>
         </div>
