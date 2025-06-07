@@ -72,7 +72,7 @@ const ProjectsSection = ({ darkMode }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <a href={project.link} target="_blank" title={project.title}>
+            <a href={project.link} target="_blank" title={project.title} rel="noopener noreferrer">
             <div
               key={index}
               className={`group relative rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 ${
