@@ -12,7 +12,7 @@ const ReviewsSection = ({ darkMode }) => {
     },
     {
       name: "Mike Yoo",
-      company: "Finance Solutions",
+      company: "RBC",
       role: "Project Managment",
       content: "Outstanding Investment management system. The investment related features are exactly what we needed.",
       rating: 5,
