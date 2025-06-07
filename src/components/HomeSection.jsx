@@ -26,9 +26,19 @@ const HomeSection = ({ darkMode, dispatch }) => {
         <h1 className={`text-5xl md:text-7xl font-bold mb-6 ${
           darkMode ? 'text-white' : 'text-gray-900'
         }`}>
-          Full Stack
-          <br />
-          <span className={`bg-gradient-to-r ${
+          Vivek <span className={`bg-gradient-to-r ${
+            darkMode 
+              ? 'from-cyan-400 to-green-400' 
+              : 'from-indigo-600 to-purple-600'
+          } bg-clip-text text-transparent`}>
+            Patel
+          </span>
+        </h1>
+
+        <h1 className={`text-5xl md:text-7xl font-bold mb-6 ${
+          darkMode ? 'text-white' : 'text-gray-900'
+        }`}>
+          Full Stack <span className={`bg-gradient-to-r ${
             darkMode 
               ? 'from-cyan-400 to-green-400' 
               : 'from-indigo-600 to-purple-600'
