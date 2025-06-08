@@ -28,7 +28,7 @@ const ContactSection = ({ darkMode }) => {
             </h3>
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", link: "vcodementor@gmail.com" },
+                { icon: Mail, label: "Email", link: "mailto:vcodementor@gmail.com" },
                 { icon: Github, label: "GitHub", link: "github.com/vcodementor" },
                 { icon: Linkedin, label: "LinkedIn", link: "linkedin.com/in/vcodementor" }
               ].map((contact, index) => (
