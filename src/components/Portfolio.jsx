@@ -5,6 +5,7 @@ import HomeSection from "./HomeSection";
 import ProjectsSection from "./ProjectsSection";
 import Navigation from "./Navigation";
 import ThreeBackground from "./ThreeBackground";
+import Footer from "./Footer";
 
 const Portfolio = () => {
   const [state, dispatch] = useGlobalState();
@@ -35,6 +36,7 @@ const Portfolio = () => {
       <main className="relative z-10">
         {renderSection()}
       </main>
+      <Footer state={state} />
     </div>
   );
 };
