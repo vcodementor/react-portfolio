@@ -85,11 +85,26 @@ const HomeSection = ({ darkMode, dispatch }) => {
             Get In Touch
           </button>
         </div>
-        <SkillsSection darkMode={darkMode} />
         <div className="flex justify-center space-x-6 mt-12">
-          {[Github, Linkedin, Twitter].map((Icon, index) => (
-            <button
+          {[
+            {
+              icon: Github,
+              link: 'https://github.com/vcodementor',
+            },
+            {
+              icon: Linkedin,
+              link: 'https://linkedin.com/in/vcodementor',
+            },
+            {
+              icon: Twitter,
+              link: 'https://x.com/vcodementor',
+            },
+          ].map(({ icon: Icon, link }, index) => (
+            <a
               key={index}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`p-3 rounded-lg transition-all duration-300 transform hover:scale-110 ${
                 darkMode
                   ? 'bg-gray-800/50 text-gray-300 hover:text-cyan-400 hover:bg-gray-700/50'
@@ -97,9 +112,10 @@ const HomeSection = ({ darkMode, dispatch }) => {
               }`}
             >
               <Icon size={24} />
-            </button>
+            </a>
           ))}
         </div>
+        <SkillsSection darkMode={darkMode} />
         <ReviewsSection darkMode={darkMode} />
       </div>
     </section>

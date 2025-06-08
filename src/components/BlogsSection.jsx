@@ -74,7 +74,7 @@ const BlogsSection = ({ darkMode }) => {
                 />
                 <div
                   className={`inline-block px-3 py-1 absolute top-4 left-6 rounded-full text-sm font-medium ${
-                    darkMode ? 'bg-cyan-500/20 text-cyan-400' : 'bg-indigo-100 text-indigo-600'
+                    darkMode ? 'bg-cyan-700 text-cyan-400' : 'bg-indigo-100 text-indigo-600'
                   }`}
                 >
                   {blog.category}

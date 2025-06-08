@@ -28,28 +28,28 @@ const ContactSection = ({ darkMode }) => {
             </h3>
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "vcodementor@gmail.com" },
-                { icon: Github, label: "GitHub", value: "github.com/vcodementor" },
-                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/vcodementor" }
+                { icon: Mail, label: "Email", link: "vcodementor@gmail.com" },
+                { icon: Github, label: "GitHub", link: "github.com/vcodementor" },
+                { icon: Linkedin, label: "LinkedIn", link: "linkedin.com/in/vcodementor" }
               ].map((contact, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className={`p-3 rounded-lg ${
-                    darkMode ? 'bg-gray-800/50 text-cyan-400' : 'bg-gray-100 text-indigo-600'
-                  }`}>
-                    <contact.icon size={24} />
-                  </div>
-                  <div>
-                    <p className={`font-medium ${
-                      darkMode ? 'text-white' : 'text-gray-900'
+                  <a
+                      key={index}
+                      href={contact.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`p-3 rounded-lg transition-all duration-300 transform hover:scale-110 ${
+                        darkMode
+                          ? 'bg-gray-800/50 text-gray-300 hover:text-cyan-400 hover:bg-gray-700/50'
+                          : 'bg-gray-100/50 text-gray-600 hover:text-indigo-600 hover:bg-gray-200/50'
+                      }`}
+                    >
+                    <div className={`p-3 rounded-lg ${
+                      darkMode ? 'bg-gray-800/50 text-cyan-400' : 'bg-gray-100 text-indigo-600'
                     }`}>
-                      {contact.label}
-                    </p>
-                    <p className={`${
-                      darkMode ? 'text-gray-400' : 'text-gray-600'
-                    }`}>
-                      {contact.value}
-                    </p>
-                  </div>
+                      <contact.icon size={24} />
+                    </div>
+                  </a>
                 </div>
               ))}
             </div>
