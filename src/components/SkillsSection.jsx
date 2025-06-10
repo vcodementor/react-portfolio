@@ -5,7 +5,7 @@ const SkillsSection = ({ darkMode }) => {
     {
       title: "Frontend Development",
       icon: <Globe className="w-8 h-8" />,
-      skills: ["React", "Next.js", "Vue.js", "Angular",  "TypeScript", "Tailwind CSS", "Three.js", "Redux"]
+      skills: ["React", "Next.js", "Vue", "Angular",  "TypeScript", "Tailwind CSS", "Three.js", "Boostrap", "HTML" ,"CSS" , "Javascript"]
     },
     {
       title: "Backend Development",
@@ -15,18 +15,18 @@ const SkillsSection = ({ darkMode }) => {
     {
       title: "Web & Mobile Developement",
       icon: <Code className="w-8 h-8" />,
-      skills: ['Wordpress', 'Shopify', 'webflow', 'Wix' , 'Cordova' ,'Ionic' ,'React Native']
-    },
-    {
-      title: " UI/ UX & Digital Marketing",
-      icon: <Code className="w-8 h-8" />,
-      skills: ['Figma', 'Adobe XD', 'SEO', 'Soical Media Marketing', 'Sendgrid' ,'mailchimp']
+      skills: ['Wordpress', 'Shopify', 'webflow', 'Wix' ,' Magento', 'Cordova' ,'Ionic' ,'React Native']
     },
     {
       title: "Cloud & DevOps",
       icon: <Cloud className="w-8 h-8" />,
-      skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform", "Monitoring"]
-    }
+      skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform",'Jenkins', "Monitoring"]
+    },
+    {
+      title: " UI/ UX & Digital Marketing",
+      icon: <Code className="w-8 h-8" />,
+      skills: ['Figma', 'Adobe XD', 'SEO', 'Soical Media Marketing', 'Sendgrid' ,'Mailchimp']
+    },
   ];
 
   return (

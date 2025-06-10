@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
 import SkillsSection from './SkillsSection';
 import ReviewsSection from './ReviewsSection';
 
@@ -87,6 +87,7 @@ const HomeSection = ({ darkMode, dispatch }) => {
         </div>
         <div className="flex justify-center space-x-6 mt-12">
           {[
+            { icon: Mail, link: "mailto:vcodementor@gmail.com" },
             {
               icon: Github,
               link: 'https://github.com/vcodementor',
@@ -99,6 +100,11 @@ const HomeSection = ({ darkMode, dispatch }) => {
               icon: Twitter,
               link: 'https://x.com/vcodementor',
             },
+            { icon: Instagram, 
+              link: "instagram.com/vcodementor" },
+            { icon: Facebook, 
+              link: "facebook.com/vcodementor"
+            }
           ].map(({ icon: Icon, link }, index) => (
             <a
               key={index}

@@ -1,10 +1,10 @@
-import {Mail, Github, Linkedin} from 'lucide-react';
+import {Mail, Github, Linkedin, Instagram, Facebook, Twitter} from 'lucide-react';
 
 const ContactSection = ({ darkMode }) => {
   return (
     <section className="min-h-screen py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${
             darkMode ? 'text-white' : 'text-gray-900'
           }`}>
@@ -17,50 +17,52 @@ const ContactSection = ({ darkMode }) => {
           }`}>
             Ready to bring your ideas to life? Let's discuss your next project
           </p>
+           <div className="flex justify-center space-x-6 mt-12">
+                    {[
+                      { icon: Mail, link: "mailto:vcodementor@gmail.com" },
+                      {
+                        icon: Github,
+                        link: 'https://github.com/vcodementor',
+                      },
+                      {
+                        icon: Linkedin,
+                        link: 'https://linkedin.com/in/vcodementor',
+                      },
+                      {
+                        icon: Twitter,
+                        link: 'https://x.com/vcodementor',
+                      },
+                      { icon: Instagram, 
+                        link: "instagram.com/vcodementor" },
+                      { icon: Facebook, 
+                        link: "facebook.com/vcodementor"
+                      }
+                    ].map(({ icon: Icon, link }, index) => (
+                      <a
+                        key={index}
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`p-3 rounded-lg transition-all duration-300 transform hover:scale-110 ${
+                          darkMode
+                            ? 'bg-gray-800/50 text-gray-300 hover:text-cyan-400 hover:bg-gray-700/50'
+                            : 'bg-gray-100/50 text-gray-600 hover:text-indigo-600 hover:bg-gray-200/50'
+                        }`}
+                      >
+                        <Icon size={24} />
+                      </a>
+                    ))}
+                  </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h3 className={`text-2xl font-bold mb-6 ${
-              darkMode ? 'text-white' : 'text-gray-900'
-            }`}>
-              Get In Touch
-            </h3>
-            <div className="space-y-6">
-              {[
-                { icon: Mail, label: "Email", link: "mailto:vcodementor@gmail.com" },
-                { icon: Github, label: "GitHub", link: "github.com/vcodementor" },
-                { icon: Linkedin, label: "LinkedIn", link: "linkedin.com/in/vcodementor" }
-              ].map((contact, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <a
-                      key={index}
-                      href={contact.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`p-3 rounded-lg transition-all duration-300 transform hover:scale-110 ${
-                        darkMode
-                          ? 'bg-gray-800/50 text-gray-300 hover:text-cyan-400 hover:bg-gray-700/50'
-                          : 'bg-gray-100/50 text-gray-600 hover:text-indigo-600 hover:bg-gray-200/50'
-                      }`}
-                    >
-                    <div className={`p-3 rounded-lg ${
-                      darkMode ? 'bg-gray-800/50 text-cyan-400' : 'bg-gray-100 text-indigo-600'
-                    }`}>
-                      <contact.icon size={24} />
-                    </div>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className={`rounded-2xl p-8 ${
+        <div className="grid grid-cols-1 lg:grid-cols-1 min-h-[300px] gap-12">
+          <div className={`rounded-2xl p-2 ${
             darkMode
               ? 'bg-gray-800/50 border border-gray-700/50'
               : 'bg-white/50 border border-gray-200/50'
           } backdrop-blur-sm`}>
-            <form className="space-y-6">
+            <iframe className="rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369115.04650811513!2d-80.00122787362278!3d43.71654840893945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1749581051176!5m2!1sen!2sca" width="100%" title="google map" height="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {/* <form className="space-y-6">
               <div>
                 <input
                   type="text"
@@ -104,7 +106,7 @@ const ContactSection = ({ darkMode }) => {
               >
                 Send Message
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>
