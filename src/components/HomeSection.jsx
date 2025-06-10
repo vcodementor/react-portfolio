@@ -101,9 +101,9 @@ const HomeSection = ({ darkMode, dispatch }) => {
               link: 'https://x.com/vcodementor',
             },
             { icon: Instagram, 
-              link: "instagram.com/vcodementor" },
+              link: "https://instagram.com/vcodementor" },
             { icon: Facebook, 
-              link: "facebook.com/vcodementor"
+              link: "https://facebook.com/vcodementor"
             }
           ].map(({ icon: Icon, link }, index) => (
             <a
