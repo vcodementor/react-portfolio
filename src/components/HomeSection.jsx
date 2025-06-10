@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail, Github, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Mail, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
 import SkillsSection from './SkillsSection';
 import ReviewsSection from './ReviewsSection';
 
@@ -88,10 +88,6 @@ const HomeSection = ({ darkMode, dispatch }) => {
         <div className="flex justify-center space-x-6 mt-12">
           {[
             { icon: Mail, link: "mailto:vcodementor@gmail.com" },
-            {
-              icon: Github,
-              link: 'https://github.com/vcodementor',
-            },
             {
               icon: Linkedin,
               link: 'https://linkedin.com/in/vcodementor',

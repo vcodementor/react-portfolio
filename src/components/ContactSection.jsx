@@ -1,4 +1,4 @@
-import {Mail, Github, Linkedin, Instagram, Facebook, Twitter} from 'lucide-react';
+import {Mail, Linkedin, Instagram, Facebook, Twitter} from 'lucide-react';
 
 const ContactSection = ({ darkMode }) => {
   return (
@@ -20,10 +20,6 @@ const ContactSection = ({ darkMode }) => {
            <div className="flex justify-center space-x-6 mt-12">
                     {[
                       { icon: Mail, link: "mailto:vcodementor@gmail.com" },
-                      {
-                        icon: Github,
-                        link: 'https://github.com/vcodementor',
-                      },
                       {
                         icon: Linkedin,
                         link: 'https://linkedin.com/in/vcodementor',
