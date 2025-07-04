@@ -1,89 +1,107 @@
-import { Code, Globe, Database, Cloud} from 'lucide-react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Code, Globe, Database, Cloud } from "lucide-react";
 
 const SkillsSection = ({ darkMode }) => {
   const skillCategories = [
     {
       title: "Frontend Development",
-      icon: <Globe className="w-8 h-8" />,
-      skills: ["React", "Next.js", "Vue", "Angular",  "TypeScript", "Tailwind CSS", "Three.js", "Boostrap", "HTML" ,"CSS" , "Javascript"]
+      icon: <Globe className="w-10 h-10" />,
+      skills: ["React", "Next.js", "Vue", "Angular", "TypeScript", "Tailwind CSS", "Three.js", "Bootstrap", "HTML", "CSS", "Javascript"]
     },
     {
       title: "Backend Development",
-      icon: <Database className="w-8 h-8" />,
+      icon: <Database className="w-10 h-10" />,
       skills: ["Node.js", "Python", "PHP", "Express", "Django", "Laravel", "FastAPI"]
     },
     {
-      title: "Web & Mobile Developement",
-      icon: <Code className="w-8 h-8" />,
-      skills: ['Wordpress', 'Shopify', 'webflow', 'Wix' ,' Magento', 'Cordova' ,'Ionic' ,'React Native']
+      title: "AI/ML",
+      icon: <Code className="w-10 h-10" />,
+      skills: ['LangChain', 'LangGraph', 'N8N', 'Autogen', 'Prompt Engineering']
+    },
+    {
+      title: "Web & Mobile Development",
+      icon: <Code className="w-10 h-10" />,
+      skills: ['Wordpress', 'Shopify', 'Webflow', 'Wix', 'Magento', 'Cordova', 'Ionic', 'React Native']
     },
     {
       title: "Cloud & DevOps",
-      icon: <Cloud className="w-8 h-8" />,
-      skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform",'Jenkins', "Monitoring"]
+      icon: <Cloud className="w-10 h-10" />,
+      skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform", 'Jenkins', "Monitoring"]
     },
     {
-      title: " UI/ UX & Digital Marketing",
-      icon: <Code className="w-8 h-8" />,
-      skills: ['Figma', 'Adobe XD', 'SEO', 'Soical Media Marketing', 'Sendgrid' ,'Mailchimp']
+      title: "UI/UX & Digital Marketing",
+      icon: <Code className="w-10 h-10" />,
+      skills: ['Figma', 'Adobe XD', 'SEO', 'Social Media Marketing', 'Sendgrid', 'Mailchimp']
     },
   ];
 
   return (
-    <section className="min-h-screen py-20 px-4">
+    <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${
-            darkMode ? 'text-white' : 'text-gray-900'
+        <div className="text-center mb-12">
+          <h2 className={`text-4xl md:text-5xl font-bold mb-4 ${
+            darkMode ? "text-white" : "text-gray-900"
           }`}>
-            Technical <span className={`${
-              darkMode ? 'text-cyan-400' : 'text-indigo-600'
-            }`}>Expertise</span>
+            My <span className={darkMode ? "text-cyan-400" : "text-indigo-600"}>Skills</span>
           </h2>
-          <p className={`text-xl max-w-3xl mx-auto ${
-            darkMode ? 'text-gray-400' : 'text-gray-600'
+          <p className={`text-lg ${
+            darkMode ? "text-gray-300" : "text-gray-600"
           }`}>
-            Comprehensive skill set across modern web technologies and cloud platforms
+            A broad range of tools and technologies across development and design
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className={`rounded-2xl p-8 transition-all duration-300 ${
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={1}
+          breakpoints={{
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          }}
+          autoplay={{ delay: 3000 }}
+          pagination={{ clickable: true }}
+          navigation
+          modules={[Autoplay, Pagination, Navigation]}
+        >
+          {skillCategories.map((category, idx) => (
+            <SwiperSlide key={idx}>
+              <div className={`p-6 rounded-3xl h-full transition-all duration-300 shadow-md ${
                 darkMode
-                  ? 'bg-gray-800/50 border border-gray-700/50 hover:border-cyan-500/50'
-                  : 'bg-white/50 border border-gray-200/50 hover:border-indigo-300/50'
-              } backdrop-blur-sm`}
-            >
-              <div className={`flex items-center space-x-4 mb-6 ${
-                darkMode ? 'text-cyan-400' : 'text-indigo-600'
+                  ? 'bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-cyan-500/50'
+                  : 'bg-gradient-to-br from-white to-gray-100 border border-gray-200 hover:border-indigo-300/50'
               }`}>
-                {category.icon}
-                <h3 className={`text-2xl font-bold ${
-                  darkMode ? 'text-white' : 'text-gray-900'
+                <div className={`flex items-center mb-4 gap-3 ${
+                  darkMode ? 'text-cyan-400' : 'text-indigo-600'
                 }`}>
-                  {category.title}
-                </h3>
+                  {category.icon}
+                  <h3 className={`text-xl font-bold ${
+                    darkMode ? "text-white" : "text-gray-800"
+                  }`}>
+                    {category.title}
+                  </h3>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, i) => (
+                    <span
+                      key={i}
+                      className={`px-3 py-1 rounded-full text-sm font-medium transition hover:scale-105 ${
+                        darkMode
+                          ? 'bg-gray-700/50 text-gray-200 hover:bg-cyan-500/30 hover:text-cyan-300'
+                          : 'bg-gray-100 text-gray-700 hover:bg-indigo-100 hover:text-indigo-600'
+                      }`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <div
-                    key={skillIndex}
-                    className={`px-4 py-2 rounded-lg text-center font-medium transition-all duration-300 hover:scale-105 ${
-                      darkMode
-                        ? 'bg-gray-700/50 text-gray-300 hover:bg-cyan-500/20 hover:text-cyan-400'
-                        : 'bg-gray-100/80 text-gray-700 hover:bg-indigo-100 hover:text-indigo-600'
-                    }`}
-                  >
-                    {skill}
-                  </div>
-                ))}
-              </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
