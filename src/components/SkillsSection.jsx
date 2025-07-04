@@ -62,14 +62,13 @@ const SkillsSection = ({ darkMode }) => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 }
           }}
-          autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}
-          navigation
           modules={[Autoplay, Pagination, Navigation]}
+          className="h-full"
         >
           {skillCategories.map((category, idx) => (
-            <SwiperSlide key={idx}>
-              <div className={`p-6 rounded-3xl h-full transition-all duration-300 shadow-md ${
+            <SwiperSlide key={idx} className="h-auto cusotm-swipe">
+              <div className={`flex flex-col h-full p-6 rounded-3xl transition-all duration-300 shadow-md ${
                 darkMode
                   ? 'bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-cyan-500/50'
                   : 'bg-gradient-to-br from-white to-gray-100 border border-gray-200 hover:border-indigo-300/50'
