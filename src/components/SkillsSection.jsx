@@ -15,12 +15,7 @@ const SkillsSection = ({ darkMode }) => {
     {
       title: "Backend Development",
       icon: <Database className="w-10 h-10" />,
-      skills: ["Node.js", "Python", "PHP", "Express", "Django", "Laravel", "FastAPI"]
-    },
-    {
-      title: "AI/ML",
-      icon: <Code className="w-10 h-10" />,
-      skills: ['LangChain', 'LangGraph', 'N8N', 'Autogen', 'Prompt Engineering']
+      skills: ["Node.js", "Python", "PHP", "Express", "Django", "Laravel", "FastAPI",'Flask']
     },
     {
       title: "Web & Mobile Development",
@@ -28,12 +23,28 @@ const SkillsSection = ({ darkMode }) => {
       skills: ['Wordpress', 'Shopify', 'Webflow', 'Wix', 'Magento', 'Cordova', 'Ionic', 'React Native']
     },
     {
+      title: "AI/ML",
+      icon: <Code className="w-10 h-10" />,
+      skills: ['LangChain', 'LangGraph', 'N8N', 'Autogen', 'Prompt Engineering']
+    },
+     {
+      title: "Cyber Security & Pen Testing",
+      icon: <Cloud className="w-10 h-10" />,
+      skills: [    "Monitoring",
+        "Splunk", "Wireshark", "Nmap", "Metasploit", "Burp Suite",
+        "CloudTrail", "GuardDuty", "SecurityHub",
+        "SIEM", "NIST", "ISO 27001", "HIPAA",
+        "OWASP ZAP", "Kali Linux", "OpenVAS", "Nessus",
+        "Cyber Threat Analysis", "Penetration Testing", "Vulnerability Assessment"]
+    },
+    {
       title: "Cloud & DevOps",
       icon: <Cloud className="w-10 h-10" />,
       skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform", 'Jenkins', "Monitoring"]
     },
+    
     {
-      title: "UI/UX & Digital Marketing",
+      title: "Digital Marketing",
       icon: <Code className="w-10 h-10" />,
       skills: ['Figma', 'Adobe XD', 'SEO', 'Social Media Marketing', 'Sendgrid', 'Mailchimp']
     },
